@@ -1,0 +1,211 @@
+/*
+Excercise 1
+*/
+
+let favouriteFood ="pizza";
+let favouriteMeal = "dinner";
+
+console.log(`I eat ${favouriteFood} at every ${favouriteMeal}`);
+
+
+
+/*
+Excercise 2
+*/
+
+const myWatchedSeries = ["black mirror", "money heist", "the big bang theory"];
+
+let myWatchedSeriesLength = myWatchedSeries.length
+myWatchedSeriesLength
+
+console.log(`I watched ${myWatchedSeriesLength} series : ${myWatchedSeries}`)
+
+
+/*
+Excercise 2 part 2
+*/
+
+myWatchedSeries[2] = "friends"
+myWatchedSeries.push("Joker")
+myWatchedSeries.unshift("Thor")
+
+myWatchedSeries.splice(1,1)
+
+let moneyHeist = myWatchedSeries[1]
+let letter = moneyHeist.charAt(2)
+console.log(`third letter of series ${moneyHeist} is ${letter}`)
+
+console.log(`Series I liked: ${myWatchedSeries}`)
+
+
+/*
+Excercise 3
+*/
+
+let temp ="42";
+
+let fahrenheit = (temp/5)*9 +32
+
+console.log(`${temp}°C is ${fahrenheit.toFixed(1)}°F`)
+
+/*
+Excercise 4
+*/
+
+let c;
+let a = 34;
+let b = 21;
+
+console.log(a+b) //first expression
+// Prediction: 55, it will add a and b
+// Actual:
+
+a = 2;
+
+console.log(a+b) //second expression
+// Prediction: 23, a=34 will be overwritten by a=2
+// Actual:
+
+//1. 55, it add both 34 and 21
+//2. 23 since a will be overwritten as 2
+//3. c is undefined
+//4. the outcome will be 75 (since 3+4 add and concat 5)
+
+
+
+/*
+Excercise 5
+*/
+
+typeof(15)
+// Prediction: number 15 is a number typr
+
+
+typeof(5.5) 
+// Prediction:float 5.5 is a number type
+
+
+typeof(NaN)
+// Prediction:number nan is a number type
+
+
+typeof("hello")
+// Prediction:string it is a string type between ""
+
+
+typeof(true)
+//prediction : boolean , it is boolean type
+
+
+typeof(1 != 2)
+// Prediction:boolean, it is a boolean
+
+
+"hamburger" + "s"
+// Prediction: hamburgers concat both string
+
+
+"hamburgers" - "s"
+// Prediction: undefined - is not a valid operator for string beside 
+// Actual: nan
+
+"1" + "3"
+// Prediction:13 concat both 1 and 3
+
+"1" - "3"
+// Prediction:-2 substraction 
+
+
+"johnny" + 5
+// Prediction: johnny5 concat johnny and 5
+
+
+"johnny" - 5
+// Prediction: undefined  - not a valid operator
+
+
+99 * "hello"
+// Prediction: nan since not a valid operator
+
+
+1 != 1
+// Prediction: false 1 is equal to 1
+
+
+1 == "1"
+// Prediction:true both are equal 
+
+
+1 === "1"
+// Prediction:false not equal to "1"
+
+
+
+
+/*
+Excercise 6
+*/
+
+5 +"34"
+// prediction : 534 concat 5 with 34
+
+
+5 - "4"
+//prediction: 1   5 minus 4
+
+10 % 5 
+//prediction : 0 since no remainder
+
+5 % 10
+// prediction: 5 remainder 5
+
+"Java" + "Script"
+//prediction: JavaScript
+
+" " + " " 
+//prediction:"  " with 2 empty space
+
+" " + 0
+//prediction : " 0" concat space and 0
+
+true + true
+//prediction: 2 since true can also be 1
+
+true + false
+//prediction :1  true can be 1 and flase is 0
+
+false + true 
+//prediction: 1 
+ 
+false - true
+//prediction -1
+
+!true
+//prediction false not operator of true is fale
+
+3 - 4
+//prediction -1 
+
+"Bob " - "bill" 
+//prediction: nan - not a valid operator for string
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
