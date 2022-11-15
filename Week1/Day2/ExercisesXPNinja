@@ -1,0 +1,77 @@
+////////////////////////////////
+///Exercise1
+///////////////////////////////
+
+
+  5 >= 1
+  //prediction: false (true)
+    0 === 1
+    //prediction:false
+    4 <= 1
+    //prediction false
+    1 != 1
+    //prediction : false
+    "A" > "B"
+    //prediction: false
+    
+    "B" < "C"
+    //prediction true
+    
+    "a" > "A"
+    //prediction: false, (true )
+    "b" < "A"
+    //prediction: false
+    true === false
+    //prediction false
+    true != true
+    //prediction
+    
+    
+////////////////////////////////
+///Exercise2
+///////////////////////////////
+
+let str = prompt('Input 2 numbers seperated by comma e,g (2,3):')
+let sum = +str.charAt(1) +  +str.charAt(3)
+
+console.log(sum)
+
+
+////////////////////////////////
+///Exercise3
+///////////////////////////////
+let msg = prompt('Make a phrase with word Nemo');
+
+let txt = msg.search("Nemo");
+
+let nemo = msg.slice(txt,4);
+
+let result = msg.includes("Nemo");
+
+if (result){
+  console.log(`I found Nemo at ${txt}`)
+}else{
+ console.log("I can't find nemo")
+}
+
+////////////////////////////////
+///Exercise 4 
+///////////////////////////////
+
+let msg = prompt('Input a number:');
+let number = Number(msg);
+
+if (number < 2){
+console.log('boom')
+}
+
+if(number >2)
+console.log("b"+s +"m")
+
+
+
+
+
+    
+    
+    
