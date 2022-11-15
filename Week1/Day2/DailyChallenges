@@ -1,0 +1,36 @@
+///////////////////////////////
+// Exercise 1
+////////////////////////////
+
+
+//1.
+const fruits = ["Banana", "Apples", "Oranges", "Blueberries"];
+
+fruits.splice(0,1)
+
+
+//2.
+fruits.sort()
+console.log(fruits)
+
+
+//3.
+fruits.push("kiwi")
+
+//4.
+
+fruits.shift()
+
+//5
+fruits.reverse()
+
+
+
+///////////////////////////////
+// Exercise 2
+////////////////////////////
+const moreFruits = ["Banana", ["Apples", ["Oranges"], "Blueberries"]];
+
+moreFruits[1][1]
+
+
