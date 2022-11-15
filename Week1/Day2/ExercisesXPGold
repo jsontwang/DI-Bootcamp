@@ -1,0 +1,100 @@
+/////////////////////
+// Exercise 1
+/////////////////////////////
+
+let sentence = ["my","favorite","color","is","blue"];
+
+
+console.log(sentence.join(' '))
+
+
+/////////////////////
+// Exercise 2
+/////////////////////////////
+
+//1
+let str1 = "mix";
+let str2 = "pod";
+
+
+//2
+let str3 = str1.slice(0,2);
+let str4 = str2.slice(0,2);
+
+console.log(str4+str1.charAt[2])
+
+str4 + str1.charAt(2)
+str3+ str2.charAt(2)
+
+//3
+
+let x = str3+ str2.charAt(2);
+let y =str4 + str1.charAt(2);
+//4
+
+console.log(y + " "+ x)
+
+
+/////////////////////
+// Exercise 2
+/////////////////////////////
+
+
+//1
+
+let num1 = prompt('Input a number:');
+
+
+//2
+console.log(num1)
+console.log(typeof(+num1))
+
+
+//3 // 4
+
+let num2 = prompt('Inout second number:')
+
+
+//5
+
+let sum = +num1 + +num2
+
+
+alert(`sum is ${sum}`)
+
+
+//6
+
+
+let opertationType = alert('Welocme to calculator')
+
+let number1 = prompt('Input first number:')
+let number2 = prompt('Input second number')
+
+let sum = +number1 + +number2
+let sub = +number1 - +number2
+let mult= +number1 * +number2
+let div = +number1 / +number2
+
+alert(`addition is ${sum}, substraction is ${sub}, multiplication is ${mult}, division is ${div}}`)
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
