@@ -60,13 +60,37 @@ if (result){
 
 let msg = prompt('Input a number:');
 let number = Number(msg);
+let boom = "Boom";
+let b = boom.charAt(0);
+let o = boom.charAt(1);
+let m = boom.charAt(3);
+let oRepeat = o.repeat(number);
+
 
 if (number < 2){
-console.log('boom')
+console.log(boom)
 }
 
-if(number >2)
-console.log("b"+s +"m")
+elseif(number >2){
+
+let oRepeat = o.repeat(number); 
+
+console.log(`${b}${oRepeat}${m}`)
+}
+
+
+
+elseif (number%2 === 0){
+  console.log(`${b}${oRepeat}${m}!`)
+}
+
+elseif(number%5 ===0){
+ console.log((`${b}${oRepeat}${m}`).toUpperCase())
+}
+
+elseif(number%5 ===0 && number%2===0){
+ console.log((`${b}${oRepeat}${m}!`).toUpperCase())
+}
 
 
 
