@@ -78,17 +78,15 @@ let oRepeat = o.repeat(number);
 console.log(`${b}${oRepeat}${m}`)
 }
 
-
-
 elseif (number%2 === 0){
   console.log(`${b}${oRepeat}${m}!`)
 }
 
-elseif(number%5 ===0){
+if(number%5 ===0){
  console.log((`${b}${oRepeat}${m}`).toUpperCase())
 }
 
-elseif(number%5 ===0 && number%2===0){
+if(number%5 ===0 && number%2===0){
  console.log((`${b}${oRepeat}${m}!`).toUpperCase())
 }
 
