@@ -1,0 +1,20 @@
+//Exercise 1 : Age Difference
+
+//Instruction
+
+//Given the years two people were born, find the date when the younger one is exactly half the age of the older.
+//Notes: The dates are given in the format YYYY
+
+
+let year1 = Number("2000");
+
+let year2 = Number("2005");
+
+let diff = year2 - year1;
+
+console.log(`year younger brother is exactly half age is ${year2 + diff}`);
+
+
+
+
+
