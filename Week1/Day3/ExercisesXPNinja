@@ -74,6 +74,28 @@ u = 5
 
 */
 
+let word = prompt("Input a word:");
+//let regexVowel = /[aeiou]/gi
+
+console.log(word.replace(/[aeiou]/gi, ''));
+
+
+
+//console.log(word.replace(regexVowel));
+
+
+
+//console.log(word.replace(/[aeiou]/gi, '',/[(?![aeiou])[a-z]]/gi, ''));
+
+
+
+
+
+
+
+
+
+
 
 
 
