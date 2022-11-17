@@ -92,6 +92,28 @@ let word = prompt("Input a word:");
 
 
 
+// example work out by ayal
+///
+
+const a = /a/ig;
+
+const e = /e/ig;
+
+const i = /i/ig;
+
+const o = /o/ig;
+
+const u = /u/ig;
+
+let word = prompt(`Enter a word: `);
+const vowelsMap = {a: 1, e: 2, i: 3, o: 4, u: 5}
+ 
+for (const vowel in vowelsMap) {
+    word = word.replace(vowel, vowelsMap[vowel])
+}
+ 
+console.log(word)
+
 
 
 
