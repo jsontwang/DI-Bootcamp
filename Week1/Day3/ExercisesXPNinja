@@ -48,7 +48,7 @@ console.log("error")
 // Regex 
 
 
-if (/\s/.test(zipCode) && /^[0-9]{5}$/.test(zipCode)){
+if (/\s/.test(zipCode) && /^[0-9]{5}/.test(zipCode)){
 console.log("sucess")
 } else {
 console.log("error")
