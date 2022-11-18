@@ -1,4 +1,3 @@
-
 // Instructions
 // Prompt the user for several words (separated by commas).
 
@@ -45,8 +44,12 @@ let starRow = checkLength(arr);
 // draw = "*".repeat(starRow) 
 let draw = `${"*".repeat(starRow)}`
 for (const word of arr ){
-  draw = draw +(`\n * ${word} *` )
+  draw = draw +"\n *"+ word +" *"; 
 }
+
+draw +=`${"*".repeat(starRow)}`;
+
+console.log(draw)
 
 
 
