@@ -1,1 +1,65 @@
 
+// Instructions
+// Prompt the user for several words (separated by commas).
+
+
+const msg = prompt("Input a sentence:", "I am a sentence")
+// Put the words into an array.
+
+let arr = msg.split(" ")
+// Console.log the words one per line, in a rectangular frame as seen below.
+
+// for (word in arr){
+//   console.log(word)
+// }
+arr.length
+
+function checkLength(arr){
+  var longWordLength = 0;
+  for (const str of arr){
+    console.log(str)
+    const strLenght = str.length; 
+    if(strLenght > longWordLength){
+      longWordLength = strLenght;
+    }
+    console.log(`longWordLength is ${longWordLength}`)
+  }
+  return longWordLength
+}
+
+// checkLength(arr)
+
+
+
+// Check out the Hints and Requirements below.
+// For example, if the user gives you:
+// Hello, World, in, a, frame
+// you will transform it to : ["Hello", "World", "in", "a", "frame"]
+// that will get displayed as:
+
+// stars and words
+
+let starRow = checkLength(arr);
+// let starCol = arr.length;
+
+// draw = "*".repeat(starRow) 
+let draw = `${"*".repeat(starRow)}`
+for (const word of arr ){
+  draw = draw +(`\n * ${word} *` )
+}
+
+
+
+
+
+
+
+
+
+
+
+// Hint
+// The number of stars that wraps the sentence, must depend on the length of the longest word.
+
+
+
