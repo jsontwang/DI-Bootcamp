@@ -12,9 +12,9 @@ let arr = msg.split(" ")
 //   console.log(word)
 // }
 arr.length
-
+let longWordLength = 0;
 function checkLength(arr){
-  var longWordLength = 0;
+ 
   for (const str of arr){
     console.log(str)
     const strLenght = str.length; 
@@ -38,31 +38,43 @@ function checkLength(arr){
 
 // stars and words
 
-let starRow = checkLength(arr);
+let starNumber = checkLength(arr) + 4 ;
 // let starCol = arr.length;
 
 // draw = "*".repeat(starRow) 
-let draw = `${"*".repeat(starRow)}`
-for (const word of arr ){
-  draw = draw +"\n *"+ word +" *"; 
+let starRow = "*".repeat(starNumber);
+
+
+function displayWord(word){
+  const spacesToAdd = longWordLength - word.length + 1;
+  const emptySpaces = " ".repeat(spacesToAdd);
+  console.log(`* ${word}${emptySpaces}*`)
+  
 }
 
-draw +=`${"*".repeat(starRow)}`;
 
-console.log(draw)
+function drawFrame(){
+    console.log(starRow)
+    for (const word of arr ){
+      displayWord(word)
+    }
+    console.log(starRow)
+}
+
+drawFrame()
 
 
 
+// // draw +=`${"*".repeat(starRow)}`;
 
-
-
-
+// console.log(draw)
 
 
 
 
 // Hint
 // The number of stars that wraps the sentence, must depend on the length of the longest word.
+
 
 
 
