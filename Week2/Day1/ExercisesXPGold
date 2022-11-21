@@ -10,8 +10,9 @@
 # I love python
 # I love python
 
+print("Hello world\n"*4 + "I love python\n"*4,end="")
 
-print("\nHello world\nHello world\nHello world\nHello world\nI love python\nI love python\nI love python\nI love python")
+
 
 # Exercise 2 : What Is The Season ?
 # Instructions
