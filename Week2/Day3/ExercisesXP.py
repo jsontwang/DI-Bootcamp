@@ -201,3 +201,7 @@ for key, values in enumerate(userList):
 # Only recreate the 1st result for:
 # The characters, which names contain the letter “i”.
 # The characters, which names start with the letter “m” or “p”.
+
+print({key: value for value, key in enumerate(users) if "i" in key })
+
+print({key: value for value, key in enumerate(users) if key[0].lower() in ["m","p"] })
