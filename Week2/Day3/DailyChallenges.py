@@ -21,7 +21,10 @@ userInput = input()
 
 # wordDict =dict.fromkeys(userInput," ")
 # userInput = "froggy"
-myList = [char for char in userInput]
+#myList = [char for char in userInput]
+#[j for j in range(len(userInput)) if userInput.startswith(i, j)]
+#for i in enumerate(userInput):
+#    wordDict = {i : ""}
 
 for i in enumerate(userInput):
     wordDict = {i : [j for j in range(len(userInput)) if userInput.startswith(i, j)]  for i in [char for char in userInput]}
